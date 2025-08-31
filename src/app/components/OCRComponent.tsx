@@ -138,7 +138,7 @@ export default function OCRComponent() {
         </select>
         <div
           ref={dropZoneRef}
-          className={`flex flex-col items-center justify-center border-2 rounded-lg p-6 sm:p-10 mb-8 transition-colors duration-200 cursor-pointer select-none ${isDragging ? "border-blue-400 bg-blue-50" : "border-gray-300 bg-gray-50"}`}
+          className={`flex flex-col items-center justify-center border-2 rounded-lg p-6 sm:p-10 mb-6 transition-colors duration-200 cursor-pointer select-none ${isDragging ? "border-blue-400 bg-blue-50" : "border-gray-300 bg-gray-50"}`}
           onClick={() => fileInputRef.current?.click()}
           onDrop={handleDrop}
           onDragOver={handleDragOver}
@@ -164,7 +164,7 @@ export default function OCRComponent() {
           />
         </div>
         {jobs.length > 0 && (
-          <div className="rounded-lg shadow border border-gray-200 bg-white flex flex-col gap-6">
+          <div className="rounded-lg shadow border border-gray-200 bg-white flex flex-col gap-6 mb-6">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse text-xs sm:text-sm">
                 <thead>
